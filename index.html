@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1416"><meta name="description" content="희미한 밤, 선명한 마음. 일본 음악과 밤의 풍경 사이에 머무는 개인 기록 공간.">
+  <title>仄か · 밤의 기록</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="header">
+  <a class="brand" href="#home" aria-label="Honoka 홈"><span lang="ja">仄</span><span>HONOKA<small>밤의 기록</small></span></a>
+  <nav aria-label="메인 메뉴"><a href="#sounds">음악</a><a href="#journal">기록</a><a href="#scenes">풍경</a><a href="#about">이 공간</a></nav>
+  <button class="sound-toggle" id="rain-toggle" aria-pressed="false"><span class="sound-icon">▂ ▅ ▃ ▆</span><span id="rain-label">빗소리 OFF</span></button>
+</header>
+<main id="main">
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="hero-art" role="img" aria-label="청록빛 달과 붉은 신호등이 비치는 비 내린 일본의 밤 골목"></div>
+    <div class="hero-shade"></div><div class="grain"></div>
+    <div class="hero-content">
+      <p class="eyebrow"><span class="dot"></span> A SMALL CORNER OF THE NIGHT</p>
+      <h1 id="hero-title">희미한 밤,<br>선명한 <em>마음.</em></h1>
+      <p class="hero-intro">하루의 소음이 잦아들면,<br>좋아하는 노래와 남겨 둔 생각을 꺼내요.</p>
+      <a class="primary" href="#sounds">오늘 밤의 음악 <span>↗</span></a>
+      <div class="hero-caption"><span>01 / NIGHT WALK</span><span>어딘가, 밤의 가장자리</span></div>
+    </div>
+    <div class="vertical-caption"><span lang="ja">夜は仄か</span><small>INSPIRED BY THE NIGHT</small></div>
+    <div class="hero-bottom"><a href="#sounds"><span class="scroll-line"></span> 천천히, 아래로</a><span>夜と音楽と、少しの余白。</span><span class="time" id="clock">00:00</span></div>
+  </section>
+
+  <section class="section sounds" id="sounds" aria-labelledby="sounds-title">
+    <div class="section-heading"><div><p class="eyebrow">01 — LISTENING ROOM</p><h2 id="sounds-title">밤에 어울리는 한 곡.</h2></div><p>말보다 먼저 마음에 닿는 소리.</p></div>
+    <article class="music-feature">
+      <button class="cover" id="play-cover" aria-label="夜は仄か 공식 뮤직비디오 열기"><img src="assets/night-city.png" alt="달빛 아래 빗물에 반사된 도시의 불빛" loading="lazy"><span class="cover-title" lang="ja">夜は<br>仄か</span><span class="play-circle">▶</span><small>ILLUSTRATION · HONOKA</small></button>
+      <div class="track-content"><p class="eyebrow"><span class="dot red"></span> TONIGHT'S PICK</p><h3 lang="ja">夜は仄か</h3><p class="track-name">Eve <span>·</span> 밤은 희미하게</p><p class="track-description">짙은 어둠 사이로 스며드는 작은 빛.<br>이 공간의 시작이 된 노래를 함께 들어요.</p><div class="track-meta"><span>2021.04.30</span><span>JAPANESE / ALTERNATIVE</span></div><div class="track-actions"><button class="text-button" id="play-track">공식 MV 감상 <span>↗</span></button><a href="https://tf.lnk.to/yoruhahonoka" target="_blank" rel="noopener noreferrer">음원 듣기 ↗</a><button id="like-track" class="heart" aria-pressed="false" aria-label="이 곡 즐겨찾기">♡</button></div><a class="source" href="https://eveofficial.com/discography/yoruhahonoka.html" target="_blank" rel="noopener noreferrer">곡 정보 · Eve 공식 사이트 ↗</a></div>
+    </article>
+  </section>
+
+  <section class="section journal" id="journal" aria-labelledby="journal-title">
+    <div class="section-heading"><div><p class="eyebrow">02 — AFTER HOURS</p><h2 id="journal-title">잠들기 전에 남긴 것들.</h2></div><button class="text-button" id="write-note">나의 메모 쓰기 <span>＋</span></button></div>
+    <div class="journal-layout"><div class="journal-intro"><span class="large-symbol" lang="ja">余白</span><p>작은 생각도<br>머물 자리가 필요하니까.</p><small>아래 글은 이 공간을 위한 예시 기록입니다.</small></div><div class="journal-list">
+      <button class="journal-entry" data-entry="0"><span class="entry-no">01</span><span class="entry-main"><small>산책 · 예시 기록</small><strong>돌아가는 길을 조금 돌아서</strong><span>익숙한 골목이 낯설게 빛나는 시간.</span></span><span class="entry-arrow">↗</span></button>
+      <button class="journal-entry" data-entry="1"><span class="entry-no">02</span><span class="entry-main"><small>음악 · 예시 기록</small><strong>한 곡을 오래 듣는 밤</strong><span>반복 버튼 너머에 남아 있는 마음.</span></span><span class="entry-arrow">↗</span></button>
+      <button class="journal-entry" data-entry="2"><span class="entry-no">03</span><span class="entry-main"><small>단상 · 예시 기록</small><strong>아무것도 아닌 작은 빛</strong><span>아직 이름을 붙이지 못한 것들에 대하여.</span></span><span class="entry-arrow">↗</span></button>
+    </div></div>
+    <div id="saved-note" class="saved-note" hidden><span class="eyebrow">MY PRIVATE NOTE</span><p id="saved-text"></p><button class="text-button" id="edit-note">메모 수정 ↗</button><small>이 브라우저에만 저장된 나의 기록</small></div>
+  </section>
+
+  <section class="section scenes" id="scenes" aria-labelledby="scenes-title">
+    <div class="section-heading"><div><p class="eyebrow">03 — FRAGMENTS OF NIGHT</p><h2 id="scenes-title">밤의 조각을 모아서.</h2></div><p>같은 밤, 서로 다른 시선.</p></div>
+    <div class="scene-grid">
+      <button class="scene scene-one" data-scene="0"><img src="assets/night-city.png" alt="골목 끝에 내려앉은 청록빛 달" loading="lazy"><span><small>01 / MOONLIGHT</small><strong>달이 머무는 곳</strong><i>↗</i></span></button>
+      <button class="scene scene-two" data-scene="1"><img src="assets/night-city.png" alt="어두운 밤을 밝히는 붉은 신호등" loading="lazy"><span><small>02 / RED SIGNAL</small><strong>잠시 멈춘 시간</strong><i>↗</i></span></button>
+      <button class="scene scene-three" data-scene="2"><img src="assets/night-city.png" alt="젖은 아스팔트 위로 번지는 불빛" loading="lazy"><span><small>03 / REFLECTION</small><strong>비가 지난 자리</strong><i>↗</i></span></button>
+    </div><p class="scene-footnote">이 공간을 위해 만든 오리지널 일러스트의 세 가지 시선.</p>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title"><p class="eyebrow">04 — A NOTE ABOUT THIS PLACE</p><span class="about-mark" lang="ja">仄</span><h2 id="about-title">좋아하는 것들을,<br>희미해지지 않도록.</h2><p>일본 음악, 늦은 산책, 그리고 짧은 문장.<br>이곳은 밤의 분위기 속에서 취향과 생각을 모으는 작은 개인 공간입니다.</p><span class="about-rule"></span><small>Eve의 「夜は仄か」에서 영감을 받은 비공식 개인 사이트.<br>배경과 글은 이 공간을 위해 새롭게 만들었습니다.</small></section>
+</main>
+<footer><a class="footer-brand" href="#home" lang="ja">仄か <span>HONOKA</span></a><p>밤이 깊어도, 작은 빛은 남아 있어요.</p><a href="#home">다시 위로 ↑</a></footer>
+<dialog id="video-dialog" class="video-dialog"><button class="close-dialog" aria-label="닫기">×</button><p class="eyebrow">EVE — OFFICIAL MUSIC VIDEO</p><h2 lang="ja">夜は仄か</h2><div id="video-mount"></div><p class="video-fallback">영상이 표시되지 않으면 <a href="https://www.youtube.com/watch?v=9Y0_CVX1hok" target="_blank" rel="noopener noreferrer">YouTube에서 감상 ↗</a></p></dialog>
+<dialog id="entry-dialog" class="entry-dialog"><button class="close-dialog" aria-label="닫기">×</button><p class="eyebrow">NIGHT JOURNAL · 예시 기록</p><h2 id="entry-title"></h2><div id="entry-text"></div><span class="dialog-end" lang="ja">夜の余白。</span></dialog>
+<dialog id="scene-dialog" class="scene-dialog"><button class="close-dialog" aria-label="닫기">×</button><img src="assets/night-city.png" alt="달빛이 비치는 일본 밤 골목의 오리지널 일러스트"><h2 id="scene-title"></h2><p id="scene-description"></p></dialog>
+<dialog id="note-dialog" class="note-dialog"><button class="close-dialog" aria-label="닫기">×</button><p class="eyebrow">A THOUGHT BEFORE SLEEP</p><h2>오늘 밤, 남겨 둘 마음.</h2><form id="note-form"><label for="note-input">나의 메모</label><textarea id="note-input" maxlength="2000" rows="7" placeholder="지금 떠오르는 생각을 천천히 적어 보세요."></textarea><div class="note-help"><small>현재 브라우저에만 저장됩니다.</small><span id="char-count">0 / 2000</span></div><div class="note-buttons"><button type="button" class="text-button" id="delete-note">메모 삭제</button><button class="primary" type="submit">기록 남기기 ↗</button></div></form></dialog>
+<div role="status" aria-live="polite" class="toast" id="toast"></div>
+</body></html>
