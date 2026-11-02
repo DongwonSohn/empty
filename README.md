@@ -1,4 +1,4 @@
-# 仄か · 밤의 기록
+# 仄か · Night Notes
 
 A personal night music website inspired by Eve’s 「夜は仄か」.
 
